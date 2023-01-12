@@ -1,0 +1,77 @@
+/*=============== FLAGS AND PHOTO ===============*/
+
+/*========== Desktop Resolution ==========*/
+#flags_and_photo {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 25px;
+  margin-bottom: $m-32;
+
+  #photo {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+
+    img {
+      position: relative;
+      top: -50px;
+      left: -50px;
+      width: calc(100% + 50px);
+      max-width: calc(100% + 50px);;
+      height: calc(100% + 50px);
+      aspect-ratio: 2/3;
+      border-radius: 50px 275px;
+      object-fit: cover;
+      z-index: $z_default;
+
+    }
+
+    &::after{
+      content: '';
+      background: $wyrd no-repeat;
+      top: 0;
+      left: 100%;
+      height: 80%;
+      width: 80%;
+      z-index: $z_zero;
+      transform: rotate(15deg) translate(-33.33%, +100px);
+
+    }
+
+    &::before {
+      content: '';
+      z-index: $z_positive;
+      width: 100%;
+      height: calc(100% - 25px);
+      border: 8px solid white;
+      border-radius: 999px;
+      top: -12.5px;
+      left: -25px;
+
+    }
+  }
+
+  #flag {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    z-index: $z_default;
+
+    img {
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      margin-top: $m-16;
+      border-radius: 20px;
+      width: 100%;
+
+    }
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

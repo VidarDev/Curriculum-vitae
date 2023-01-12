@@ -1,0 +1,45 @@
+/*=============== EXPERIENCE ===============*/
+
+/*========== Desktop Resolution ==========*/
+#experience {
+  grid-area: 1 / 1 / 2 / 2;
+
+  div {
+    display: flex;
+    align-items: flex-start;
+
+    .experience__date {
+      margin-bottom: $m-16;
+
+    }
+
+    a {
+      margin-top: 0.25rem;
+      flex: 1 1 250px;
+
+      img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+
+      }
+    }
+
+    div {
+      flex: 1 1 calc(100% - 250px);
+      padding-left: $p-16;
+      display: block;
+
+    }
+    &:not(:last-child) {
+      margin-bottom: $m-32;
+
+    }
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

@@ -1,0 +1,27 @@
+/*=============== ABOUT ===============*/
+
+/*========== Desktop Resolution ==========*/
+#about {
+  margin: 1.1875rem 0 3.125rem 0;
+  border: 4px solid $neutral-black;
+  padding: $p-32 $p-16 $p-16 $p-16;
+  position: relative;
+
+  h2 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: fit-content;
+    padding: 0 0.5rem;
+    background-color: $brand-secondary;
+    transform: translateY(-50%);
+
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

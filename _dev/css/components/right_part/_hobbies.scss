@@ -1,0 +1,63 @@
+/*=============== HOBBIES ===============*/
+
+/*========== Desktop Resolution ==========*/
+#hobbies {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 1.1875rem 0 0 0;
+  border: 4px solid $neutral-black;
+  padding: $p-32 $p-16 $p-16 $p-16;
+  position: relative;
+  height: fit-content;
+
+  h2 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: fit-content;
+    padding: 0 0.5rem;
+    background-color: $brand-secondary;
+    transform: translateY(-50%);
+
+  }
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      flex: 0 1 110px;
+      width: 110px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+
+    }
+
+    p {
+      flex: 1 1 calc(100% - 110px);
+      padding-left: $p-16;
+      display: block;
+
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: $p-16;
+
+    }
+  }
+
+  & > img {
+    position: absolute;
+    margin-top: $m-32;
+    max-height: 125px;
+    top: 100%;
+    right: 0;
+    transform: rotateZ(-5deg);
+
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

@@ -1,0 +1,38 @@
+/*=============== EDUCATION ===============*/
+
+/*========== Desktop Resolution ==========*/
+#education {
+  margin-bottom: $m-32;
+
+  div {
+    margin-bottom: $m-32;
+    padding-left: 4.6875rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 50px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent $celtic_pattern center top/contain repeat;
+      border-radius: 8px;
+
+    }
+
+    .education__date {
+      margin-bottom: $m-16;
+
+    }
+
+    .education__content {
+
+    }
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

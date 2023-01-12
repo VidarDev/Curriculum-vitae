@@ -1,0 +1,49 @@
+/*=============== LINK ===============*/
+
+/*========== Desktop Resolution ==========*/
+#links {
+
+  .link__item {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1.25fr;
+
+    &.link__item--linkedin {
+      margin-bottom: $m-16;
+
+    }
+
+    &.link__item--site {
+
+      p {
+        margin-bottom: 0.5em;
+
+      }
+
+      #link__link--profil-complet {
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        background-color: $brand-primary;
+
+      }
+    }
+
+    img {
+      grid-area: 1 / 1 / 2 / 2;
+      width: 100%;
+      aspect-ratio: 1/1;
+
+    }
+    div {
+      grid-area: 1 / 2 / 2 / 3;
+      margin-left: $m-16;
+
+    }
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

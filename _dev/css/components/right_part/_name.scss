@@ -1,0 +1,51 @@
+/*=============== NAME ===============*/
+
+/*========== Desktop Resolution ==========*/
+#name {
+  margin-bottom: calc(#{$m-32} + 1.1875rem);
+  position: relative;
+
+  p > strong {
+    font-size: 65px;
+    letter-spacing: -2px;
+    color: $brand-primary;
+
+  }
+
+  #opentowork {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+
+  }
+
+  &::before {
+    content: '';
+    top: -50px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+    background-color: $success;
+    clip-path: path('M0 0Q25 325 350 350L350 0');
+
+  }
+
+  &::after {
+    content: '';
+    top: -50px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+    background-color: $brand-secondary;
+    clip-path: path('M100 0Q125 225 350 250L350 0');
+
+  }
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/

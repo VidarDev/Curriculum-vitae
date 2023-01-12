@@ -1,0 +1,94 @@
+/*=============== UI KIT ===============*/
+
+/*========== Desktop Resolution ==========*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: $weight_standard;
+  color: $neutral-black;
+  text-align: left;
+
+}
+
+h1 {
+  font-size: $font-size_h1;
+  line-height: 1;
+
+  span {
+    display: block;
+    font-weight: $weight_standard;
+    font-size: $font-size_h1;
+    line-height: 0.9;
+
+  }
+}
+
+h2 {
+  position: relative;
+  font-size: $font-size_h2;
+
+}
+
+.h2--primary {
+  width: fit-content;
+  z-index: $z_default;
+
+  &::before {
+    content: '';
+    background-color: $brand-primary;
+    left: 50%;
+    bottom: -5%;
+    width: 85%;
+    height: 35%;
+    z-index: $z_negative;
+    transform: translateX(-50%) skew(-8deg);
+
+  }
+}
+
+.h2--secondary {
+  color: $neutral-white;
+  width: fit-content;
+  z-index: $z_default;
+
+  &::before {
+    content: '';
+    background-color: $brand-primary;
+    right: -25px;
+    bottom: -5%;
+    width: calc(100% + 75px);
+    height: 35%;
+    z-index: $z_negative;
+    transform: skew(-8deg);
+
+  }
+}
+
+h3 {
+  font-size: $font-size_h3;
+  margin-bottom: 0;
+  line-height: 1.2;
+
+}
+
+strong {
+  color: $brand-primary;
+
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/
+
+
+/*========== Media Print (PDF) ==========*/
+@media print {
+
+  @page {
+    size: 2480px 3508px;
+
+  }
+}

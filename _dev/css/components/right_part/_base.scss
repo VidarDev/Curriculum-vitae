@@ -1,0 +1,22 @@
+/*=============== ID PRIMARY ===============*/
+
+/*========== Desktop Resolution ==========*/
+#primary {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-left: $m-16;
+
+}
+
+#table {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 25px;
+
+}
+
+/*========== Laptop Resolution ==========*/
+
+/*========== Tablet Resolution ==========*/
+
+/*========== Mobile Resolution ==========*/
